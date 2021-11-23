@@ -1,0 +1,20 @@
+<?php
+
+namespace {{ namespace }};
+
+use {{ namespacedModel }};
+use AzanKorejo\Respire;
+
+class {{ class }}
+{
+     /**
+     * Handle the {{ model }} "creating" event.
+     *
+     * @param  \{{ namespacedModel }}  ${{ modelVariable }}
+     * @return void
+     */
+     public function creating({{ model }} ${{ modelVariable }})
+     {
+        {{ modelVariable }}->password_expiration_date = Respire::tokenExpirateionDate();
+     }
+}

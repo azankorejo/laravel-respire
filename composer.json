@@ -1,0 +1,18 @@
+{
+    "name": "azan-korejo/laravel-respire",
+    "description": "An Elegant way to authenticate users and remind them of changing their password after x amount of time",
+    "license": "MIT",
+    "require-dev": {
+        "orchestra/testbench": "^6.23"
+    },
+    "autoload": {
+      "psr-4": {
+        "azankorejo\\Respire\\": "src/"
+      }
+    },
+    "autoload-dev": {
+      "psr-4": {
+        "azankorejo\\Respire\\Tests\\" : "tests/"
+      }
+    }
+}
